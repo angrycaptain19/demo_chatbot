@@ -13,9 +13,10 @@ from actions.constants import HOSTNAME,USER,PWD,DATABASE,PORT
 
 # This config can be modified- This is for testing puprose
 dict_limt={
-    'cubicle':10,
+    'cubicles':10,
     'conference':10,
-    'recreation':3
+    'recreation':3,
+    'offices':10
 }
 
 
@@ -88,18 +89,20 @@ class ActionBookRoom(Action):
                 database=DATABASE,
                 port=PORT
             ).get_data(filters, table, flag=False)
-            if len(occupied) == dict_limt.get('table'):
+            if len(occupied) == dict_limt.get(table):
                 dispatcher.utter_message(
                     text="Sorry we could not find a seat for you."
                          " The room cannot accomodate more people as per COVID-19 norms of the company")
             elif len(occupied) == 1:
+                
                 dispatcher.utter_message(
                     text="Sorry we could not find result."
-                         "This can be due to the seats is occupied by {} employee id".format(occupied[4]))
+                         "This can be due to the seats is occupied by {} employee id".
+                        format(occupied[0][4]))
             elif len(not_sanitized)==1:
                 dispatcher.utter_message(
                     text="Sorry we could not find a seat for you. "
-                         "This can be due to seat of preference with seat id {} is not sanitized".format(0))
+                         "This can be due to seat of preference with seat id {} is not sanitized".format(not_sanitized[0][0]))
             elif occupied or not_sanitized:
                 dispatcher.utter_message(
                     text="Sorry we could not find a seat for you."

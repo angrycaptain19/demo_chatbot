@@ -4,6 +4,132 @@
       {
         "entities": [
           {
+            "end": 29,
+            "entity": "RecreationalRoomType",
+            "start": 15,
+            "value": "[a pool table]"
+          },
+          {
+            "end": 74,
+            "entity": "RoomType",
+            "start": 15,
+            "value": "[a pool table]{\"entity\": \"room_type\", \"value\":\"recreation\"}"
+          },
+          {
+            "end": 94,
+            "entity": "number",
+            "start": 91,
+            "value": "[2]"
+          },
+          {
+            "end": 117,
+            "entity": "Floor",
+            "start": 91,
+            "value": "[2]{\"entity\": \"floor_num\"}"
+          },
+          {
+            "end": 126,
+            "entity": "number",
+            "start": 123,
+            "value": "[1]"
+          },
+          {
+            "end": 148,
+            "entity": "member",
+            "start": 123,
+            "value": "[1]{\"entity\": \"capacity\"}"
+          }
+        ],
+        "intent": "book-room",
+        "text": "I want to book [a pool table]{\"entity\": \"room_type\", \"value\":\"recreation\"} at floor number [2]{\"entity\": \"floor_num\"} with [1]{\"entity\": \"capacity\"} people"
+      },
+      {
+        "entities": [
+          {
+            "end": 29,
+            "entity": "RecreationalRoomType",
+            "start": 15,
+            "value": "[a pool table]"
+          },
+          {
+            "end": 74,
+            "entity": "RoomType",
+            "start": 15,
+            "value": "[a pool table]{\"entity\": \"room_type\", \"value\":\"recreation\"}"
+          },
+          {
+            "end": 88,
+            "entity": "number",
+            "start": 85,
+            "value": "[1]"
+          },
+          {
+            "end": 111,
+            "entity": "Floor",
+            "start": 85,
+            "value": "[1]{\"entity\": \"floor_num\"}"
+          },
+          {
+            "end": 120,
+            "entity": "number",
+            "start": 117,
+            "value": "[1]"
+          },
+          {
+            "end": 142,
+            "entity": "member",
+            "start": 117,
+            "value": "[1]{\"entity\": \"capacity\"}"
+          }
+        ],
+        "intent": "book-room",
+        "text": "I want to book [a pool table]{\"entity\": \"room_type\", \"value\":\"recreation\"} at storey [1]{\"entity\": \"floor_num\"} with [1]{\"entity\": \"capacity\"} members"
+      },
+      {
+        "entities": [
+          {
+            "end": 29,
+            "entity": "RecreationalRoomType",
+            "start": 15,
+            "value": "[a pool table]"
+          },
+          {
+            "end": 74,
+            "entity": "RoomType",
+            "start": 15,
+            "value": "[a pool table]{\"entity\": \"room_type\", \"value\":\"recreation\"}"
+          },
+          {
+            "end": 88,
+            "entity": "number",
+            "start": 85,
+            "value": "[1]"
+          },
+          {
+            "end": 111,
+            "entity": "Floor",
+            "start": 85,
+            "value": "[1]{\"entity\": \"floor_num\"}"
+          },
+          {
+            "end": 134,
+            "entity": "cube_name",
+            "start": 127,
+            "value": "[Cube1]"
+          },
+          {
+            "end": 152,
+            "entity": "Seat",
+            "start": 127,
+            "value": "[Cube1]{\"entity\": \"name\"}"
+          }
+        ],
+        "intent": "book-room",
+        "text": "I want to book [a pool table]{\"entity\": \"room_type\", \"value\":\"recreation\"} at storey [1]{\"entity\": \"floor_num\"} with seat name [Cube1]{\"entity\": \"name\"}"
+      },
+      {
+        "entities": [
+          {
             "end": 37,
             "entity": "ConferenceRoom",
             "start": 15,
@@ -220,6 +346,36 @@
       {
         "entities": [
           {
+            "end": 51,
+            "entity": "HighMgmtRoom",
+            "start": 15,
+            "value": "[available office room for director]"
+          },
+          {
+            "end": 93,
+            "entity": "RoomType",
+            "start": 15,
+            "value": "[available office room for director]{\"entity\": \"room_type\", \"value\":\"offices\"}"
+          },
+          {
+            "end": 100,
+            "entity": "number",
+            "start": 97,
+            "value": "[3]"
+          },
+          {
+            "end": 123,
+            "entity": "Floor",
+            "start": 97,
+            "value": "[3]{\"entity\": \"floor_num\"}"
+          }
+        ],
+        "intent": "book-room",
+        "text": "I want to book [available office room for director]{\"entity\": \"room_type\", \"value\":\"offices\"} at [3]{\"entity\": \"floor_num\"} storey"
+      },
+      {
+        "entities": [
+          {
             "end": 48,
             "entity": "VideoConfRoom",
             "start": 15,
@@ -264,6 +420,48 @@
         ],
         "intent": "book-room",
         "text": "I want to book [empty room]{\"entity\": \"room_type\", \"value\":\"cubicles\"} at storey [1]{\"entity\": \"floor_num\"}"
+      },
+      {
+        "entities": [
+          {
+            "end": 25,
+            "entity": "RecreationalRoomType",
+            "start": 15,
+            "value": "[for pool]"
+          },
+          {
+            "end": 70,
+            "entity": "RoomType",
+            "start": 15,
+            "value": "[for pool]{\"entity\": \"room_type\", \"value\":\"recreation\"}"
+          },
+          {
+            "end": 83,
+            "entity": "number",
+            "start": 80,
+            "value": "[1]"
+          },
+          {
+            "end": 106,
+            "entity": "Floor",
+            "start": 80,
+            "value": "[1]{\"entity\": \"floor_num\"}"
+          },
+          {
+            "end": 138,
+            "entity": "cube_name",
+            "start": 125,
+            "value": "[Conference2]"
+          },
+          {
+            "end": 156,
+            "entity": "Seat",
+            "start": 125,
+            "value": "[Conference2]{\"entity\": \"name\"}"
+          }
+        ],
+        "intent": "book-room",
+        "text": "I want to book [for pool]{\"entity\": \"room_type\", \"value\":\"recreation\"} at floor [1]{\"entity\": \"floor_num\"} with cubicle name [Conference2]{\"entity\": \"name\"}"
       },
       {
         "entities": [
@@ -361,204 +559,6 @@
             "end": 26,
             "entity": "RecreationalRoomType",
             "start": 15,
-            "value": "[play pool]"
-          },
-          {
-            "end": 71,
-            "entity": "RoomType",
-            "start": 15,
-            "value": "[play pool]{\"entity\": \"room_type\", \"value\":\"recreation\"}"
-          },
-          {
-            "end": 91,
-            "entity": "number",
-            "start": 88,
-            "value": "[2]"
-          },
-          {
-            "end": 114,
-            "entity": "Floor",
-            "start": 88,
-            "value": "[2]{\"entity\": \"floor_num\"}"
-          },
-          {
-            "end": 123,
-            "entity": "number",
-            "start": 120,
-            "value": "[1]"
-          },
-          {
-            "end": 145,
-            "entity": "member",
-            "start": 120,
-            "value": "[1]{\"entity\": \"capacity\"}"
-          }
-        ],
-        "intent": "book-room",
-        "text": "I want to book [play pool]{\"entity\": \"room_type\", \"value\":\"recreation\"} at floor number [2]{\"entity\": \"floor_num\"} with [1]{\"entity\": \"capacity\"} people"
-      },
-      {
-        "entities": [
-          {
-            "end": 26,
-            "entity": "RecreationalRoomType",
-            "start": 15,
-            "value": "[play pool]"
-          },
-          {
-            "end": 71,
-            "entity": "RoomType",
-            "start": 15,
-            "value": "[play pool]{\"entity\": \"room_type\", \"value\":\"recreation\"}"
-          },
-          {
-            "end": 91,
-            "entity": "number",
-            "start": 88,
-            "value": "[3]"
-          },
-          {
-            "end": 114,
-            "entity": "Floor",
-            "start": 88,
-            "value": "[3]{\"entity\": \"floor_num\"}"
-          },
-          {
-            "end": 137,
-            "entity": "cube_name",
-            "start": 130,
-            "value": "[Cube1]"
-          },
-          {
-            "end": 155,
-            "entity": "Seat",
-            "start": 130,
-            "value": "[Cube1]{\"entity\": \"name\"}"
-          }
-        ],
-        "intent": "book-room",
-        "text": "I want to book [play pool]{\"entity\": \"room_type\", \"value\":\"recreation\"} at floor number [3]{\"entity\": \"floor_num\"} with seat name [Cube1]{\"entity\": \"name\"}"
-      },
-      {
-        "entities": [
-          {
-            "end": 26,
-            "entity": "RecreationalRoomType",
-            "start": 15,
-            "value": "[play pool]"
-          },
-          {
-            "end": 71,
-            "entity": "RoomType",
-            "start": 15,
-            "value": "[play pool]{\"entity\": \"room_type\", \"value\":\"recreation\"}"
-          },
-          {
-            "end": 85,
-            "entity": "number",
-            "start": 82,
-            "value": "[1]"
-          },
-          {
-            "end": 108,
-            "entity": "Floor",
-            "start": 82,
-            "value": "[1]{\"entity\": \"floor_num\"}"
-          },
-          {
-            "end": 117,
-            "entity": "number",
-            "start": 114,
-            "value": "[1]"
-          },
-          {
-            "end": 139,
-            "entity": "member",
-            "start": 114,
-            "value": "[1]{\"entity\": \"capacity\"}"
-          }
-        ],
-        "intent": "book-room",
-        "text": "I want to book [play pool]{\"entity\": \"room_type\", \"value\":\"recreation\"} at storey [1]{\"entity\": \"floor_num\"} with [1]{\"entity\": \"capacity\"} members"
-      },
-      {
-        "entities": [
-          {
-            "end": 34,
-            "entity": "RecreationalRoomType",
-            "start": 15,
-            "value": "[play table tennis]"
-          },
-          {
-            "end": 79,
-            "entity": "RoomType",
-            "start": 15,
-            "value": "[play table tennis]{\"entity\": \"room_type\", \"value\":\"recreation\"}"
-          },
-          {
-            "end": 86,
-            "entity": "number",
-            "start": 83,
-            "value": "[3]"
-          },
-          {
-            "end": 109,
-            "entity": "Floor",
-            "start": 83,
-            "value": "[3]{\"entity\": \"floor_num\"}"
-          }
-        ],
-        "intent": "book-room",
-        "text": "I want to book [play table tennis]{\"entity\": \"room_type\", \"value\":\"recreation\"} at [3]{\"entity\": \"floor_num\"} floor number"
-      },
-      {
-        "entities": [
-          {
-            "end": 34,
-            "entity": "RecreationalRoomType",
-            "start": 15,
-            "value": "[play table tennis]"
-          },
-          {
-            "end": 79,
-            "entity": "RoomType",
-            "start": 15,
-            "value": "[play table tennis]{\"entity\": \"room_type\", \"value\":\"recreation\"}"
-          },
-          {
-            "end": 92,
-            "entity": "number",
-            "start": 89,
-            "value": "[1]"
-          },
-          {
-            "end": 115,
-            "entity": "Floor",
-            "start": 89,
-            "value": "[1]{\"entity\": \"floor_num\"}"
-          },
-          {
-            "end": 147,
-            "entity": "cube_name",
-            "start": 134,
-            "value": "[Conference2]"
-          },
-          {
-            "end": 165,
-            "entity": "Seat",
-            "start": 134,
-            "value": "[Conference2]{\"entity\": \"name\"}"
-          }
-        ],
-        "intent": "book-room",
-        "text": "I want to book [play table tennis]{\"entity\": \"room_type\", \"value\":\"recreation\"} at floor [1]{\"entity\": \"floor_num\"} with cubicle name [Conference2]{\"entity\": \"name\"}"
-      },
-      {
-        "entities": [
-          {
-            "end": 26,
-            "entity": "RecreationalRoomType",
-            "start": 15,
             "value": "[pool room]"
           },
           {
@@ -582,6 +582,54 @@
         ],
         "intent": "book-room",
         "text": "I want to book [pool room]{\"entity\": \"room_type\", \"value\":\"recreation\"} at [1]{\"entity\": \"floor_num\"} floor"
+      },
+      {
+        "entities": [
+          {
+            "end": 27,
+            "entity": "RecreationalRoomType",
+            "start": 15,
+            "value": "[pool table]"
+          },
+          {
+            "end": 72,
+            "entity": "RoomType",
+            "start": 15,
+            "value": "[pool table]{\"entity\": \"room_type\", \"value\":\"recreation\"}"
+          }
+        ],
+        "intent": "book-room",
+        "text": "I want to book [pool table]{\"entity\": \"room_type\", \"value\":\"recreation\"}"
+      },
+      {
+        "entities": [
+          {
+            "end": 27,
+            "entity": "RecreationalRoomType",
+            "start": 15,
+            "value": "[pool table]"
+          },
+          {
+            "end": 72,
+            "entity": "RoomType",
+            "start": 15,
+            "value": "[pool table]{\"entity\": \"room_type\", \"value\":\"recreation\"}"
+          },
+          {
+            "end": 79,
+            "entity": "number",
+            "start": 76,
+            "value": "[2]"
+          },
+          {
+            "end": 102,
+            "entity": "Floor",
+            "start": 76,
+            "value": "[2]{\"entity\": \"floor_num\"}"
+          }
+        ],
+        "intent": "book-room",
+        "text": "I want to book [pool table]{\"entity\": \"room_type\", \"value\":\"recreation\"} at [2]{\"entity\": \"floor_num\"} floor number"
       },
       {
         "entities": [
@@ -658,50 +706,20 @@
       {
         "entities": [
           {
-            "end": 29,
+            "end": 34,
             "entity": "RecreationalRoomType",
             "start": 15,
-            "value": "[table tennis]"
+            "value": "[table tennis room]"
           },
           {
-            "end": 74,
+            "end": 79,
             "entity": "RoomType",
             "start": 15,
-            "value": "[table tennis]{\"entity\": \"room_type\", \"value\":\"recreation\"}"
+            "value": "[table tennis room]{\"entity\": \"room_type\", \"value\":\"recreation\"}"
           }
         ],
         "intent": "book-room",
-        "text": "I want to book [table tennis]{\"entity\": \"room_type\", \"value\":\"recreation\"}"
-      },
-      {
-        "entities": [
-          {
-            "end": 29,
-            "entity": "RecreationalRoomType",
-            "start": 15,
-            "value": "[table tennis]"
-          },
-          {
-            "end": 74,
-            "entity": "RoomType",
-            "start": 15,
-            "value": "[table tennis]{\"entity\": \"room_type\", \"value\":\"recreation\"}"
-          },
-          {
-            "end": 81,
-            "entity": "number",
-            "start": 78,
-            "value": "[2]"
-          },
-          {
-            "end": 104,
-            "entity": "Floor",
-            "start": 78,
-            "value": "[2]{\"entity\": \"floor_num\"}"
-          }
-        ],
-        "intent": "book-room",
-        "text": "I want to book [table tennis]{\"entity\": \"room_type\", \"value\":\"recreation\"} at [2]{\"entity\": \"floor_num\"} floor number"
+        "text": "I want to book [table tennis room]{\"entity\": \"room_type\", \"value\":\"recreation\"}"
       },
       {
         "entities": [
@@ -716,10 +734,94 @@
             "entity": "RoomType",
             "start": 15,
             "value": "[tt room]{\"entity\": \"room_type\", \"value\":\"recreation\"}"
+          },
+          {
+            "end": 76,
+            "entity": "number",
+            "start": 73,
+            "value": "[3]"
+          },
+          {
+            "end": 99,
+            "entity": "Floor",
+            "start": 73,
+            "value": "[3]{\"entity\": \"floor_num\"}"
           }
         ],
         "intent": "book-room",
-        "text": "I want to book [tt room]{\"entity\": \"room_type\", \"value\":\"recreation\"}"
+        "text": "I want to book [tt room]{\"entity\": \"room_type\", \"value\":\"recreation\"} at [3]{\"entity\": \"floor_num\"} floor number"
+      },
+      {
+        "entities": [
+          {
+            "end": 24,
+            "entity": "RecreationalRoomType",
+            "start": 15,
+            "value": "[tt room]"
+          },
+          {
+            "end": 69,
+            "entity": "RoomType",
+            "start": 15,
+            "value": "[tt room]{\"entity\": \"room_type\", \"value\":\"recreation\"}"
+          },
+          {
+            "end": 82,
+            "entity": "number",
+            "start": 79,
+            "value": "[3]"
+          },
+          {
+            "end": 105,
+            "entity": "Floor",
+            "start": 79,
+            "value": "[3]{\"entity\": \"floor_num\"}"
+          },
+          {
+            "end": 128,
+            "entity": "cube_name",
+            "start": 121,
+            "value": "[Cube1]"
+          },
+          {
+            "end": 146,
+            "entity": "Seat",
+            "start": 121,
+            "value": "[Cube1]{\"entity\": \"name\"}"
+          }
+        ],
+        "intent": "book-room",
+        "text": "I want to book [tt room]{\"entity\": \"room_type\", \"value\":\"recreation\"} at floor [3]{\"entity\": \"floor_num\"} with seat name [Cube1]{\"entity\": \"name\"}"
+      },
+      {
+        "entities": [
+          {
+            "end": 24,
+            "entity": "RecreationalRoomType",
+            "start": 15,
+            "value": "[tt room]"
+          },
+          {
+            "end": 69,
+            "entity": "RoomType",
+            "start": 15,
+            "value": "[tt room]{\"entity\": \"room_type\", \"value\":\"recreation\"}"
+          },
+          {
+            "end": 89,
+            "entity": "number",
+            "start": 86,
+            "value": "[3]"
+          },
+          {
+            "end": 112,
+            "entity": "Floor",
+            "start": 86,
+            "value": "[3]{\"entity\": \"floor_num\"}"
+          }
+        ],
+        "intent": "book-room",
+        "text": "I want to book [tt room]{\"entity\": \"room_type\", \"value\":\"recreation\"} at floor number [3]{\"entity\": \"floor_num\"}"
       },
       {
         "entities": [
@@ -738,6 +840,36 @@
         ],
         "intent": "book-room",
         "text": "I want to book [vacant room]{\"entity\": \"room_type\", \"value\":\"cubicles\"}"
+      },
+      {
+        "entities": [
+          {
+            "end": 35,
+            "entity": "RecreationalRoomType",
+            "start": 21,
+            "value": "[a pool table]"
+          },
+          {
+            "end": 80,
+            "entity": "RoomType",
+            "start": 21,
+            "value": "[a pool table]{\"entity\": \"room_type\", \"value\":\"recreation\"}"
+          },
+          {
+            "end": 89,
+            "entity": "number",
+            "start": 86,
+            "value": "[2]"
+          },
+          {
+            "end": 111,
+            "entity": "member",
+            "start": 86,
+            "value": "[2]{\"entity\": \"capacity\"}"
+          }
+        ],
+        "intent": "book-room",
+        "text": "I would like to book [a pool table]{\"entity\": \"room_type\", \"value\":\"recreation\"} with [2]{\"entity\": \"capacity\"} members"
       },
       {
         "entities": [
@@ -1076,6 +1208,24 @@
             "entity": "RoomType",
             "start": 21,
             "value": "[available office room for director]{\"entity\": \"room_type\", \"value\":\"offices\"}"
+          }
+        ],
+        "intent": "book-room",
+        "text": "I would like to book [available office room for director]{\"entity\": \"room_type\", \"value\":\"offices\"} from"
+      },
+      {
+        "entities": [
+          {
+            "end": 57,
+            "entity": "HighMgmtRoom",
+            "start": 21,
+            "value": "[available office room for director]"
+          },
+          {
+            "end": 99,
+            "entity": "RoomType",
+            "start": 21,
+            "value": "[available office room for director]{\"entity\": \"room_type\", \"value\":\"offices\"}"
           },
           {
             "end": 108,
@@ -1175,43 +1325,7 @@
           }
         ],
         "intent": "book-room",
-        "text": "I would like to book [cubicle]{\"entity\": \"room_type\", \"value\":\"cubicles\"}"
-      },
-      {
-        "entities": [
-          {
-            "end": 30,
-            "entity": "VacantRoom",
-            "start": 21,
-            "value": "[cubicle]"
-          },
-          {
-            "end": 73,
-            "entity": "RoomType",
-            "start": 21,
-            "value": "[cubicle]{\"entity\": \"room_type\", \"value\":\"cubicles\"}"
-          }
-        ],
-        "intent": "book-room",
         "text": "I would like to book [cubicle]{\"entity\": \"room_type\", \"value\":\"cubicles\"} from"
-      },
-      {
-        "entities": [
-          {
-            "end": 33,
-            "entity": "VacantRoom",
-            "start": 21,
-            "value": "[empty room]"
-          },
-          {
-            "end": 76,
-            "entity": "RoomType",
-            "start": 21,
-            "value": "[empty room]{\"entity\": \"room_type\", \"value\":\"cubicles\"}"
-          }
-        ],
-        "intent": "book-room",
-        "text": "I would like to book [empty room]{\"entity\": \"room_type\", \"value\":\"cubicles\"}"
       },
       {
         "entities": [
@@ -1423,54 +1537,6 @@
             "end": 32,
             "entity": "RecreationalRoomType",
             "start": 21,
-            "value": "[play pool]"
-          },
-          {
-            "end": 77,
-            "entity": "RoomType",
-            "start": 21,
-            "value": "[play pool]{\"entity\": \"room_type\", \"value\":\"recreation\"}"
-          },
-          {
-            "end": 86,
-            "entity": "number",
-            "start": 83,
-            "value": "[2]"
-          },
-          {
-            "end": 108,
-            "entity": "member",
-            "start": 83,
-            "value": "[2]{\"entity\": \"capacity\"}"
-          }
-        ],
-        "intent": "book-room",
-        "text": "I would like to book [play pool]{\"entity\": \"room_type\", \"value\":\"recreation\"} with [2]{\"entity\": \"capacity\"} members"
-      },
-      {
-        "entities": [
-          {
-            "end": 40,
-            "entity": "RecreationalRoomType",
-            "start": 21,
-            "value": "[play table tennis]"
-          },
-          {
-            "end": 85,
-            "entity": "RoomType",
-            "start": 21,
-            "value": "[play table tennis]{\"entity\": \"room_type\", \"value\":\"recreation\"}"
-          }
-        ],
-        "intent": "book-room",
-        "text": "I would like to book [play table tennis]{\"entity\": \"room_type\", \"value\":\"recreation\"} from"
-      },
-      {
-        "entities": [
-          {
-            "end": 32,
-            "entity": "RecreationalRoomType",
-            "start": 21,
             "value": "[pool room]"
           },
           {
@@ -1524,6 +1590,66 @@
         ],
         "intent": "book-room",
         "text": "I would like to book [quiet room]{\"entity\": \"room_type\", \"value\":\"3\"} with [1]{\"entity\": \"capacity\"} people"
+      },
+      {
+        "entities": [
+          {
+            "end": 35,
+            "entity": "RecreationalRoomType",
+            "start": 21,
+            "value": "[table tennis]"
+          },
+          {
+            "end": 80,
+            "entity": "RoomType",
+            "start": 21,
+            "value": "[table tennis]{\"entity\": \"room_type\", \"value\":\"recreation\"}"
+          }
+        ],
+        "intent": "book-room",
+        "text": "I would like to book [table tennis]{\"entity\": \"room_type\", \"value\":\"recreation\"} from"
+      },
+      {
+        "entities": [
+          {
+            "end": 26,
+            "entity": "RecreationalRoomType",
+            "start": 12,
+            "value": "[a pool table]"
+          },
+          {
+            "end": 71,
+            "entity": "RoomType",
+            "start": 12,
+            "value": "[a pool table]{\"entity\": \"room_type\", \"value\":\"recreation\"}"
+          },
+          {
+            "end": 85,
+            "entity": "number",
+            "start": 82,
+            "value": "[2]"
+          },
+          {
+            "end": 108,
+            "entity": "Floor",
+            "start": 82,
+            "value": "[2]{\"entity\": \"floor_num\"}"
+          },
+          {
+            "end": 117,
+            "entity": "number",
+            "start": 114,
+            "value": "[3]"
+          },
+          {
+            "end": 139,
+            "entity": "member",
+            "start": 114,
+            "value": "[3]{\"entity\": \"capacity\"}"
+          }
+        ],
+        "intent": "book-room",
+        "text": "Please book [a pool table]{\"entity\": \"room_type\", \"value\":\"recreation\"} at storey [2]{\"entity\": \"floor_num\"} with [3]{\"entity\": \"capacity\"} participants"
       },
       {
         "entities": [
@@ -1984,6 +2110,36 @@
       {
         "entities": [
           {
+            "end": 22,
+            "entity": "RecreationalRoomType",
+            "start": 12,
+            "value": "[for pool]"
+          },
+          {
+            "end": 67,
+            "entity": "RoomType",
+            "start": 12,
+            "value": "[for pool]{\"entity\": \"room_type\", \"value\":\"recreation\"}"
+          },
+          {
+            "end": 74,
+            "entity": "number",
+            "start": 71,
+            "value": "[1]"
+          },
+          {
+            "end": 97,
+            "entity": "Floor",
+            "start": 71,
+            "value": "[1]{\"entity\": \"floor_num\"}"
+          }
+        ],
+        "intent": "book-room",
+        "text": "Please book [for pool]{\"entity\": \"room_type\", \"value\":\"recreation\"} at [1]{\"entity\": \"floor_num\"} floor"
+      },
+      {
+        "entities": [
+          {
             "end": 37,
             "entity": "HighMgmtRoom",
             "start": 12,
@@ -2010,78 +2166,6 @@
         ],
         "intent": "book-room",
         "text": "Please book [office room for seniors]{\"entity\": \"room_type\", \"value\":\"offices\"} at storey [2]{\"entity\": \"floor_num\"}"
-      },
-      {
-        "entities": [
-          {
-            "end": 23,
-            "entity": "RecreationalRoomType",
-            "start": 12,
-            "value": "[play pool]"
-          },
-          {
-            "end": 68,
-            "entity": "RoomType",
-            "start": 12,
-            "value": "[play pool]{\"entity\": \"room_type\", \"value\":\"recreation\"}"
-          },
-          {
-            "end": 82,
-            "entity": "number",
-            "start": 79,
-            "value": "[2]"
-          },
-          {
-            "end": 105,
-            "entity": "Floor",
-            "start": 79,
-            "value": "[2]{\"entity\": \"floor_num\"}"
-          },
-          {
-            "end": 114,
-            "entity": "number",
-            "start": 111,
-            "value": "[3]"
-          },
-          {
-            "end": 136,
-            "entity": "member",
-            "start": 111,
-            "value": "[3]{\"entity\": \"capacity\"}"
-          }
-        ],
-        "intent": "book-room",
-        "text": "Please book [play pool]{\"entity\": \"room_type\", \"value\":\"recreation\"} at storey [2]{\"entity\": \"floor_num\"} with [3]{\"entity\": \"capacity\"} participants"
-      },
-      {
-        "entities": [
-          {
-            "end": 31,
-            "entity": "RecreationalRoomType",
-            "start": 12,
-            "value": "[play table tennis]"
-          },
-          {
-            "end": 76,
-            "entity": "RoomType",
-            "start": 12,
-            "value": "[play table tennis]{\"entity\": \"room_type\", \"value\":\"recreation\"}"
-          },
-          {
-            "end": 83,
-            "entity": "number",
-            "start": 80,
-            "value": "[1]"
-          },
-          {
-            "end": 106,
-            "entity": "Floor",
-            "start": 80,
-            "value": "[1]{\"entity\": \"floor_num\"}"
-          }
-        ],
-        "intent": "book-room",
-        "text": "Please book [play table tennis]{\"entity\": \"room_type\", \"value\":\"recreation\"} at [1]{\"entity\": \"floor_num\"} floor"
       },
       {
         "entities": [
@@ -2128,6 +2212,78 @@
       {
         "entities": [
           {
+            "end": 24,
+            "entity": "RecreationalRoomType",
+            "start": 12,
+            "value": "[pool table]"
+          },
+          {
+            "end": 69,
+            "entity": "RoomType",
+            "start": 12,
+            "value": "[pool table]{\"entity\": \"room_type\", \"value\":\"recreation\"}"
+          },
+          {
+            "end": 76,
+            "entity": "number",
+            "start": 73,
+            "value": "[3]"
+          },
+          {
+            "end": 99,
+            "entity": "Floor",
+            "start": 73,
+            "value": "[3]{\"entity\": \"floor_num\"}"
+          }
+        ],
+        "intent": "book-room",
+        "text": "Please book [pool table]{\"entity\": \"room_type\", \"value\":\"recreation\"} at [3]{\"entity\": \"floor_num\"} storey"
+      },
+      {
+        "entities": [
+          {
+            "end": 24,
+            "entity": "RecreationalRoomType",
+            "start": 12,
+            "value": "[pool table]"
+          },
+          {
+            "end": 69,
+            "entity": "RoomType",
+            "start": 12,
+            "value": "[pool table]{\"entity\": \"room_type\", \"value\":\"recreation\"}"
+          },
+          {
+            "end": 89,
+            "entity": "number",
+            "start": 86,
+            "value": "[3]"
+          },
+          {
+            "end": 112,
+            "entity": "Floor",
+            "start": 86,
+            "value": "[3]{\"entity\": \"floor_num\"}"
+          },
+          {
+            "end": 121,
+            "entity": "number",
+            "start": 118,
+            "value": "[3]"
+          },
+          {
+            "end": 143,
+            "entity": "member",
+            "start": 118,
+            "value": "[3]{\"entity\": \"capacity\"}"
+          }
+        ],
+        "intent": "book-room",
+        "text": "Please book [pool table]{\"entity\": \"room_type\", \"value\":\"recreation\"} at floor number [3]{\"entity\": \"floor_num\"} with [3]{\"entity\": \"capacity\"} members"
+      },
+      {
+        "entities": [
+          {
             "end": 25,
             "entity": "QuietRoom",
             "start": 12,
@@ -2140,104 +2296,20 @@
             "value": "[quiet space]{\"entity\": \"room_type\", \"value\":\"3\"}"
           },
           {
-            "end": 75,
+            "end": 68,
             "entity": "number",
-            "start": 72,
+            "start": 65,
             "value": "[2]"
           },
           {
-            "end": 98,
-            "entity": "Floor",
-            "start": 72,
-            "value": "[2]{\"entity\": \"floor_num\"}"
-          },
-          {
-            "end": 121,
-            "entity": "cube_name",
-            "start": 114,
-            "value": "[Cube3]"
-          },
-          {
-            "end": 139,
-            "entity": "Seat",
-            "start": 114,
-            "value": "[Cube3]{\"entity\": \"name\"}"
-          }
-        ],
-        "intent": "book-room",
-        "text": "Please book [quiet space]{\"entity\": \"room_type\", \"value\":\"3\"} at storey [2]{\"entity\": \"floor_num\"} with seat name [Cube3]{\"entity\": \"name\"}"
-      },
-      {
-        "entities": [
-          {
-            "end": 26,
-            "entity": "RecreationalRoomType",
-            "start": 12,
-            "value": "[table tennis]"
-          },
-          {
-            "end": 71,
-            "entity": "RoomType",
-            "start": 12,
-            "value": "[table tennis]{\"entity\": \"room_type\", \"value\":\"recreation\"}"
-          },
-          {
-            "end": 78,
-            "entity": "number",
-            "start": 75,
-            "value": "[3]"
-          },
-          {
-            "end": 101,
-            "entity": "Floor",
-            "start": 75,
-            "value": "[3]{\"entity\": \"floor_num\"}"
-          }
-        ],
-        "intent": "book-room",
-        "text": "Please book [table tennis]{\"entity\": \"room_type\", \"value\":\"recreation\"} at [3]{\"entity\": \"floor_num\"} storey"
-      },
-      {
-        "entities": [
-          {
-            "end": 26,
-            "entity": "RecreationalRoomType",
-            "start": 12,
-            "value": "[table tennis]"
-          },
-          {
-            "end": 71,
-            "entity": "RoomType",
-            "start": 12,
-            "value": "[table tennis]{\"entity\": \"room_type\", \"value\":\"recreation\"}"
-          },
-          {
             "end": 91,
-            "entity": "number",
-            "start": 88,
-            "value": "[3]"
-          },
-          {
-            "end": 114,
             "entity": "Floor",
-            "start": 88,
-            "value": "[3]{\"entity\": \"floor_num\"}"
-          },
-          {
-            "end": 123,
-            "entity": "number",
-            "start": 120,
-            "value": "[3]"
-          },
-          {
-            "end": 145,
-            "entity": "member",
-            "start": 120,
-            "value": "[3]{\"entity\": \"capacity\"}"
+            "start": 65,
+            "value": "[2]{\"entity\": \"floor_num\"}"
           }
         ],
         "intent": "book-room",
-        "text": "Please book [table tennis]{\"entity\": \"room_type\", \"value\":\"recreation\"} at floor number [3]{\"entity\": \"floor_num\"} with [3]{\"entity\": \"capacity\"} members"
+        "text": "Please book [quiet space]{\"entity\": \"room_type\", \"value\":\"3\"} at [2]{\"entity\": \"floor_num\"} storey"
       },
       {
         "entities": [
@@ -2418,48 +2490,6 @@
         ],
         "intent": "book-room",
         "text": "book [any office space for senior executives]{\"entity\": \"room_type\", \"value\":\"offices\"} at floor [2]{\"entity\": \"floor_num\"} with cubicle name [Cube3]{\"entity\": \"name\"}"
-      },
-      {
-        "entities": [
-          {
-            "end": 45,
-            "entity": "HighMgmtRoom",
-            "start": 5,
-            "value": "[any office space for senior executives]"
-          },
-          {
-            "end": 87,
-            "entity": "RoomType",
-            "start": 5,
-            "value": "[any office space for senior executives]{\"entity\": \"room_type\", \"value\":\"offices\"}"
-          },
-          {
-            "end": 101,
-            "entity": "number",
-            "start": 98,
-            "value": "[3]"
-          },
-          {
-            "end": 124,
-            "entity": "Floor",
-            "start": 98,
-            "value": "[3]{\"entity\": \"floor_num\"}"
-          },
-          {
-            "end": 133,
-            "entity": "number",
-            "start": 130,
-            "value": "[3]"
-          },
-          {
-            "end": 155,
-            "entity": "member",
-            "start": 130,
-            "value": "[3]{\"entity\": \"capacity\"}"
-          }
-        ],
-        "intent": "book-room",
-        "text": "book [any office space for senior executives]{\"entity\": \"room_type\", \"value\":\"offices\"} at storey [3]{\"entity\": \"floor_num\"} with [3]{\"entity\": \"capacity\"} members"
       },
       {
         "entities": [
@@ -2752,20 +2782,32 @@
       {
         "entities": [
           {
-            "end": 14,
-            "entity": "VacantRoom",
+            "end": 15,
+            "entity": "RecreationalRoomType",
             "start": 5,
-            "value": "[cubicle]"
+            "value": "[for pool]"
           },
           {
-            "end": 57,
+            "end": 60,
             "entity": "RoomType",
             "start": 5,
-            "value": "[cubicle]{\"entity\": \"room_type\", \"value\":\"cubicles\"}"
+            "value": "[for pool]{\"entity\": \"room_type\", \"value\":\"recreation\"}"
+          },
+          {
+            "end": 67,
+            "entity": "number",
+            "start": 64,
+            "value": "[1]"
+          },
+          {
+            "end": 90,
+            "entity": "Floor",
+            "start": 64,
+            "value": "[1]{\"entity\": \"floor_num\"}"
           }
         ],
         "intent": "book-room",
-        "text": "book [cubicle]{\"entity\": \"room_type\", \"value\":\"cubicles\"}"
+        "text": "book [for pool]{\"entity\": \"room_type\", \"value\":\"recreation\"} at [1]{\"entity\": \"floor_num\"} floor number"
       },
       {
         "entities": [
@@ -2796,66 +2838,6 @@
         ],
         "intent": "book-room",
         "text": "book [meeting room]{\"entity\": \"room_type\", \"value\":\"conference\"} with [1]{\"entity\": \"capacity\"} members"
-      },
-      {
-        "entities": [
-          {
-            "end": 16,
-            "entity": "RecreationalRoomType",
-            "start": 5,
-            "value": "[play pool]"
-          },
-          {
-            "end": 61,
-            "entity": "RoomType",
-            "start": 5,
-            "value": "[play pool]{\"entity\": \"room_type\", \"value\":\"recreation\"}"
-          },
-          {
-            "end": 75,
-            "entity": "number",
-            "start": 72,
-            "value": "[2]"
-          },
-          {
-            "end": 98,
-            "entity": "Floor",
-            "start": 72,
-            "value": "[2]{\"entity\": \"floor_num\"}"
-          }
-        ],
-        "intent": "book-room",
-        "text": "book [play pool]{\"entity\": \"room_type\", \"value\":\"recreation\"} at storey [2]{\"entity\": \"floor_num\"}"
-      },
-      {
-        "entities": [
-          {
-            "end": 24,
-            "entity": "RecreationalRoomType",
-            "start": 5,
-            "value": "[play table tennis]"
-          },
-          {
-            "end": 69,
-            "entity": "RoomType",
-            "start": 5,
-            "value": "[play table tennis]{\"entity\": \"room_type\", \"value\":\"recreation\"}"
-          },
-          {
-            "end": 76,
-            "entity": "number",
-            "start": 73,
-            "value": "[1]"
-          },
-          {
-            "end": 99,
-            "entity": "Floor",
-            "start": 73,
-            "value": "[1]{\"entity\": \"floor_num\"}"
-          }
-        ],
-        "intent": "book-room",
-        "text": "book [play table tennis]{\"entity\": \"room_type\", \"value\":\"recreation\"} at [1]{\"entity\": \"floor_num\"} floor number"
       },
       {
         "entities": [
@@ -2938,32 +2920,50 @@
       {
         "entities": [
           {
-            "end": 19,
+            "end": 14,
             "entity": "RecreationalRoomType",
             "start": 5,
-            "value": "[table tennis]"
+            "value": "[tt room]"
           },
           {
-            "end": 64,
+            "end": 59,
             "entity": "RoomType",
             "start": 5,
-            "value": "[table tennis]{\"entity\": \"room_type\", \"value\":\"recreation\"}"
+            "value": "[tt room]{\"entity\": \"room_type\", \"value\":\"recreation\"}"
           },
           {
             "end": 73,
             "entity": "number",
             "start": 70,
-            "value": "[3]"
+            "value": "[2]"
           },
           {
-            "end": 95,
-            "entity": "member",
+            "end": 96,
+            "entity": "Floor",
             "start": 70,
-            "value": "[3]{\"entity\": \"capacity\"}"
+            "value": "[2]{\"entity\": \"floor_num\"}"
           }
         ],
         "intent": "book-room",
-        "text": "book [table tennis]{\"entity\": \"room_type\", \"value\":\"recreation\"} with [3]{\"entity\": \"capacity\"} participants"
+        "text": "book [tt room]{\"entity\": \"room_type\", \"value\":\"recreation\"} at storey [2]{\"entity\": \"floor_num\"}"
+      },
+      {
+        "entities": [
+          {
+            "end": 18,
+            "entity": "VacantRoom",
+            "start": 5,
+            "value": "[vacant room]"
+          },
+          {
+            "end": 61,
+            "entity": "RoomType",
+            "start": 5,
+            "value": "[vacant room]{\"entity\": \"room_type\", \"value\":\"cubicles\"}"
+          }
+        ],
+        "intent": "book-room",
+        "text": "book [vacant room]{\"entity\": \"room_type\", \"value\":\"cubicles\"} from"
       },
       {
         "entities": [
@@ -3020,22 +3020,10 @@
             "entity": "RoomType",
             "start": 5,
             "value": "[video conference room]{\"entity\": \"room_type\", \"value\":\"5\"}"
-          },
-          {
-            "end": 73,
-            "entity": "number",
-            "start": 70,
-            "value": "[3]"
-          },
-          {
-            "end": 95,
-            "entity": "member",
-            "start": 70,
-            "value": "[3]{\"entity\": \"capacity\"}"
           }
         ],
         "intent": "book-room",
-        "text": "book [video conference room]{\"entity\": \"room_type\", \"value\":\"5\"} with [3]{\"entity\": \"capacity\"} members"
+        "text": "book [video conference room]{\"entity\": \"room_type\", \"value\":\"5\"} from"
       },
       {
         "entities": [

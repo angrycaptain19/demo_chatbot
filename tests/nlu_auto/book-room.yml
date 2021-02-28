@@ -4,15 +4,14 @@ nlu:
   examples: |
    - I want to book [available confernece room]{"entity": "room_type", "value":"conference"} from
    - I want to book [available office room for director]{"entity": "room_type", "value":"offices"} at [1]{"entity": "floor_num"} floor
-   - I want to book [available office room for director]{"entity": "room_type", "value":"offices"} at [3]{"entity": "floor_num"} storey
    - I want to book [avaliable office room]{"entity": "room_type", "value":"offices"} at floor number [3]{"entity": "floor_num"}
-   - I want to book [conf room]{"entity": "room_type", "value":"conference"} at storey [3]{"entity": "floor_num"} with [1]{"entity": "capacity"} participants
    - I want to book [empty space]{"entity": "room_type", "value":"cubicles"} from
    - I want to book [office room for seniors]{"entity": "room_type", "value":"offices"} at [2]{"entity": "floor_num"} storey
-   - I want to book [tt room]{"entity": "room_type", "value":"recreation"} at floor [1]{"entity": "floor_num"} with name of seat [Conference2]{"entity": "name"}
+   - I want to book [table tennis room]{"entity": "room_type", "value":"recreation"} at floor [1]{"entity": "floor_num"} with name of seat [Conference2]{"entity": "name"}
    - I want to book [video meeting space]{"entity": "room_type", "value":"5"} at storey [3]{"entity": "floor_num"} with [1]{"entity": "capacity"} participants
+   - I would like to book [cubicle]{"entity": "room_type", "value":"cubicles"}
+   - I would like to book [pool table]{"entity": "room_type", "value":"recreation"} at [3]{"entity": "floor_num"} floor
    - I would like to book [quiet room]{"entity": "room_type", "value":"3"} from
-   - I would like to book [table tennis]{"entity": "room_type", "value":"recreation"} at [3]{"entity": "floor_num"} floor
    - Please book [any confernece space]{"entity": "room_type", "value":"conference"} at storey [1]{"entity": "floor_num"} with [3]{"entity": "capacity"} members
    - Please book [available confernece room]{"entity": "room_type", "value":"conference"} at floor number [1]{"entity": "floor_num"} with [3]{"entity": "capacity"} participants
    - Please book [available office room for director]{"entity": "room_type", "value":"offices"} at floor [1]{"entity": "floor_num"} with [2]{"entity": "capacity"} members
@@ -21,4 +20,5 @@ nlu:
    - book [any video confernece space]{"entity": "room_type", "value":"5"} at [1]{"entity": "floor_num"} floor number
    - book [available empty room]{"entity": "room_type", "value":"cubicles"}
    - book [available office room for director]{"entity": "room_type", "value":"offices"} at floor number [1]{"entity": "floor_num"} with cubicle name [Conference1]{"entity": "name"}
+   - book [cubicle]{"entity": "room_type", "value":"cubicles"}
    - book [pool room]{"entity": "room_type", "value":"recreation"} from
