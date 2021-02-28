@@ -1,6 +1,6 @@
-HOSTNAME = 'localhost'
+HOSTNAME = '0.0.0.0'
 USER = 'root'
-PWD = 'Mtat02767!'
+PWD = 'yourpassword'
 DATABASE = 'bookings'
 LIMIT = 10
-PORT='3306'
+PORT='55009'
