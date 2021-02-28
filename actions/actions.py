@@ -10,11 +10,12 @@ from rasa_sdk.events import (
     AllSlotsReset
 )
 
-HOSTNAME = 'localhost'
+HOSTNAME = '0.0.0.0'
 USER = 'root'
-PWD = ''
+PWD = 'blingbling'
 DATABASE = 'bookings'
 LIMIT = 10
+PORT='55009'
 
 # This config can be modified- This is for testing puprose
 dict_limt={
@@ -81,14 +82,17 @@ class ActionBookRoom(Action):
             host=HOSTNAME,
             user=USER,
             password=PWD,
-            database=DATABASE
+            database=DATABASE,
+            port=PORT
                 ).get_data(filters,table)
+
         if not data:
             occupied, not_sanitized = SQlServer(
                 host=HOSTNAME,
                 user=USER,
                 password=PWD,
-                database=DATABASE
+                database=DATABASE,
+                port=PORT
             ).get_data(filters, table, flag=False)
             if len(occupied) == dict_limt.get('table'):
                 dispatcher.utter_message(
@@ -175,7 +179,8 @@ class ConditionalSlotting(object):
         existing_filters, count = self.create_filters_from_existing_set_slots(self.form_slots, current_slots, filters)
 
         # Condition check if data is greater than threshold and apply conditional slot
-        if current_intent not in ['deny'] or count < length_of_forms :
+
+        if current_intent not in ['deny']:
             request_slot = self.request_conditional_slots(self.form_slots, current_slots, count)
             return request_slot
         else:

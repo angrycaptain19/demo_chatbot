@@ -2,103 +2,103 @@ version: "2.0"
 nlu:
 - intent: book-room
   examples: |
-   - I want to book [any conf room]{"entity": "room_type", "value":"conference"}
-   - I want to book [any conf room]{"entity": "room_type", "value":"conference"} at storey [1]{"entity": "floor_num"}
-   - I want to book [any confernece space]{"entity": "room_type", "value":"conference"}
-   - I want to book [any silent space]{"entity": "room_type", "value":"3"} with [3]{"entity": "capacity"} people
-   - I want to book [any vacant space]{"entity": "room_type", "value":"cubicles"} from
-   - I want to book [available confernece room]{"entity": "room_type", "value":"conference"} at storey [3]{"entity": "floor_num"} with [3]{"entity": "capacity"} people
-   - I want to book [available empty room]{"entity": "room_type", "value":"cubicles"} at floor [2]{"entity": "floor_num"}
-   - I want to book [available empty room]{"entity": "room_type", "value":"cubicles"} at floor number [1]{"entity": "floor_num"} with [3]{"entity": "capacity"} members
-   - I want to book [available empty room]{"entity": "room_type", "value":"cubicles"} at storey [1]{"entity": "floor_num"} with [1]{"entity": "capacity"} members
-   - I want to book [available individual seating space]{"entity": "room_type", "value":"cubicles"} from
-   - I want to book [available quiet room]{"entity": "room_type", "value":"3"} with [3]{"entity": "capacity"} members
+   - I want to book [any confernece space]{"entity": "room_type", "value":"conference"} at floor [1]{"entity": "floor_num"} with cubicle name [Cube2]{"entity": "name"}
+   - I want to book [any office space for senior executives]{"entity": "room_type", "value":"offices"} at floor number [2]{"entity": "floor_num"} with [1]{"entity": "capacity"} people
+   - I want to book [any silent space]{"entity": "room_type", "value":"3"}
+   - I want to book [any video conf room]{"entity": "room_type", "value":"5"} at [2]{"entity": "floor_num"} floor number
+   - I want to book [any video conf room]{"entity": "room_type", "value":"5"} at storey [3]{"entity": "floor_num"} with [1]{"entity": "capacity"} people
+   - I want to book [available empty room]{"entity": "room_type", "value":"cubicles"} at storey [1]{"entity": "floor_num"} with name of seat [Cube2]{"entity": "name"}
    - I want to book [available video confernece room]{"entity": "room_type", "value":"5"}
-   - I want to book [avaliable office room]{"entity": "room_type", "value":"offices"}
-   - I want to book [avaliable office room]{"entity": "room_type", "value":"offices"} at floor number [3]{"entity": "floor_num"}
-   - I want to book [avaliable office room]{"entity": "room_type", "value":"offices"} with [2]{"entity": "capacity"} people
-   - I want to book [conference room]{"entity": "room_type", "value":"conference"} from
-   - I want to book [empty space]{"entity": "room_type", "value":"cubicles"} at storey [1]{"entity": "floor_num"}
-   - I want to book [meeting room]{"entity": "room_type", "value":"conference"} with [2]{"entity": "capacity"} people
-   - I want to book [meeting space]{"entity": "room_type", "value":"conference"} at floor [1]{"entity": "floor_num"} with [1]{"entity": "capacity"} members
-   - I want to book [meeting space]{"entity": "room_type", "value":"conference"} with [1]{"entity": "capacity"} members
-   - I want to book [office room for seniors]{"entity": "room_type", "value":"offices"} at floor number [1]{"entity": "floor_num"}
-   - I want to book [play pool]{"entity": "room_type", "value":"recreation"} at floor [3]{"entity": "floor_num"} with [2]{"entity": "capacity"} people
-   - I want to book [pool room]{"entity": "room_type", "value":"recreation"}
-   - I want to book [quiet room]{"entity": "room_type", "value":"3"} from
-   - I want to book [table tennis]{"entity": "room_type", "value":"recreation"} with [1]{"entity": "capacity"} members
+   - I want to book [empty room]{"entity": "room_type", "value":"cubicles"} at storey [1]{"entity": "floor_num"}
+   - I want to book [meeting room]{"entity": "room_type", "value":"conference"}
+   - I want to book [meeting space]{"entity": "room_type", "value":"conference"} at storey [2]{"entity": "floor_num"} with [2]{"entity": "capacity"} members
+   - I want to book [office room for seniors]{"entity": "room_type", "value":"offices"} at [3]{"entity": "floor_num"} storey
+   - I want to book [play pool]{"entity": "room_type", "value":"recreation"} at floor number [2]{"entity": "floor_num"} with [1]{"entity": "capacity"} people
+   - I want to book [play pool]{"entity": "room_type", "value":"recreation"} at floor number [3]{"entity": "floor_num"} with seat name [Cube1]{"entity": "name"}
+   - I want to book [play pool]{"entity": "room_type", "value":"recreation"} at storey [1]{"entity": "floor_num"} with [1]{"entity": "capacity"} members
+   - I want to book [play table tennis]{"entity": "room_type", "value":"recreation"} at [3]{"entity": "floor_num"} floor number
+   - I want to book [play table tennis]{"entity": "room_type", "value":"recreation"} at floor [1]{"entity": "floor_num"} with cubicle name [Conference2]{"entity": "name"}
+   - I want to book [pool room]{"entity": "room_type", "value":"recreation"} at [1]{"entity": "floor_num"} floor
+   - I want to book [quiet room]{"entity": "room_type", "value":"3"} at [3]{"entity": "floor_num"} storey
+   - I want to book [quiet room]{"entity": "room_type", "value":"3"} at floor number [1]{"entity": "floor_num"} with seat name [Cube1]{"entity": "name"}
+   - I want to book [table tennis]{"entity": "room_type", "value":"recreation"}
+   - I want to book [table tennis]{"entity": "room_type", "value":"recreation"} at [2]{"entity": "floor_num"} floor number
+   - I want to book [tt room]{"entity": "room_type", "value":"recreation"}
    - I want to book [vacant room]{"entity": "room_type", "value":"cubicles"}
-   - I want to book [video conference room]{"entity": "room_type", "value":"5"} at storey [2]{"entity": "floor_num"} with name of seat [Conference1]{"entity": "name"}
-   - I want to book [video meeting space]{"entity": "room_type", "value":"5"} with [1]{"entity": "capacity"} people
-   - I would like to book [any confernece space]{"entity": "room_type", "value":"conference"} from
-   - I would like to book [any office room for director]{"entity": "room_type", "value":"offices"} at floor number [3]{"entity": "floor_num"} with [2]{"entity": "capacity"} people
-   - I would like to book [any video conf room]{"entity": "room_type", "value":"5"} with [1]{"entity": "capacity"} participants
-   - I would like to book [any video confernece space]{"entity": "room_type", "value":"5"}
-   - I would like to book [available confernece room]{"entity": "room_type", "value":"conference"} at floor number [2]{"entity": "floor_num"}
-   - I would like to book [available empty room]{"entity": "room_type", "value":"cubicles"} at floor [1]{"entity": "floor_num"} with cubicle name [Cube2]{"entity": "name"}
-   - I would like to book [available office room for director]{"entity": "room_type", "value":"offices"} at floor number [1]{"entity": "floor_num"}
-   - I would like to book [available quiet room]{"entity": "room_type", "value":"3"}
-   - I would like to book [available quiet room]{"entity": "room_type", "value":"3"} at storey [3]{"entity": "floor_num"} with [3]{"entity": "capacity"} members
-   - I would like to book [available video confernece room]{"entity": "room_type", "value":"5"} at floor number [2]{"entity": "floor_num"} with [1]{"entity": "capacity"} members
-   - I would like to book [available video confernece room]{"entity": "room_type", "value":"5"} at storey [3]{"entity": "floor_num"} with [1]{"entity": "capacity"} people
-   - I would like to book [avaliable office room]{"entity": "room_type", "value":"offices"} at [1]{"entity": "floor_num"} storey
-   - I would like to book [avaliable office room]{"entity": "room_type", "value":"offices"} at storey [1]{"entity": "floor_num"}
+   - I would like to book [any conf room]{"entity": "room_type", "value":"conference"} at storey [1]{"entity": "floor_num"} with name of seat [Conference2]{"entity": "name"}
+   - I would like to book [any video conf room]{"entity": "room_type", "value":"5"} with [1]{"entity": "capacity"} people
+   - I would like to book [any video confernece space]{"entity": "room_type", "value":"5"} at floor number [1]{"entity": "floor_num"} with [2]{"entity": "capacity"} participants
+   - I would like to book [any video confernece space]{"entity": "room_type", "value":"5"} with [1]{"entity": "capacity"} people
+   - I would like to book [available confernece room]{"entity": "room_type", "value":"conference"}
+   - I would like to book [available confernece room]{"entity": "room_type", "value":"conference"} from
+   - I would like to book [available empty room]{"entity": "room_type", "value":"cubicles"}
+   - I would like to book [available empty room]{"entity": "room_type", "value":"cubicles"} at floor number [1]{"entity": "floor_num"} with [3]{"entity": "capacity"} participants
+   - I would like to book [available empty room]{"entity": "room_type", "value":"cubicles"} at floor number [1]{"entity": "floor_num"} with cubicle name [Conference2]{"entity": "name"}
+   - I would like to book [available office room for director]{"entity": "room_type", "value":"offices"} at storey [3]{"entity": "floor_num"} with name of seat [Cube1]{"entity": "name"}
+   - I would like to book [available office room for director]{"entity": "room_type", "value":"offices"} with [2]{"entity": "capacity"} participants
+   - I would like to book [available video confernece room]{"entity": "room_type", "value":"5"} at [3]{"entity": "floor_num"} storey
    - I would like to book [avaliable office room]{"entity": "room_type", "value":"offices"} from
-   - I would like to book [conf room]{"entity": "room_type", "value":"conference"} with [3]{"entity": "capacity"} people
-   - I would like to book [conference room]{"entity": "room_type", "value":"conference"} at storey [2]{"entity": "floor_num"} with cubicle name [Cube1]{"entity": "name"}
-   - I would like to book [conference room]{"entity": "room_type", "value":"conference"} at storey [3]{"entity": "floor_num"} with name of seat [Cube3]{"entity": "name"}
-   - I would like to book [empty space]{"entity": "room_type", "value":"cubicles"} from
-   - I would like to book [meeting space]{"entity": "room_type", "value":"conference"} with [3]{"entity": "capacity"} members
-   - I would like to book [pool room]{"entity": "room_type", "value":"recreation"} at floor [1]{"entity": "floor_num"}
-   - I would like to book [quiet room]{"entity": "room_type", "value":"3"} at floor [1]{"entity": "floor_num"} with cubicle name [Cube3]{"entity": "name"}
-   - I would like to book [quiet space]{"entity": "room_type", "value":"3"} at floor [2]{"entity": "floor_num"}
-   - I would like to book [vacant room]{"entity": "room_type", "value":"cubicles"} at floor [3]{"entity": "floor_num"} with [2]{"entity": "capacity"} members
-   - I would like to book [vacant room]{"entity": "room_type", "value":"cubicles"} with [3]{"entity": "capacity"} participants
-   - I would like to book [video meeting space]{"entity": "room_type", "value":"5"} with [3]{"entity": "capacity"} people
-   - Please book [any conf room]{"entity": "room_type", "value":"conference"} at [3]{"entity": "floor_num"} floor
-   - Please book [any office space for senior executives]{"entity": "room_type", "value":"offices"} at floor number [2]{"entity": "floor_num"} with seat name [Conference2]{"entity": "name"}
+   - I would like to book [conference room]{"entity": "room_type", "value":"conference"} from
+   - I would like to book [cubicle]{"entity": "room_type", "value":"cubicles"}
+   - I would like to book [cubicle]{"entity": "room_type", "value":"cubicles"} from
+   - I would like to book [empty room]{"entity": "room_type", "value":"cubicles"}
+   - I would like to book [empty room]{"entity": "room_type", "value":"cubicles"} at storey [1]{"entity": "floor_num"} with [2]{"entity": "capacity"} members
+   - I would like to book [meeting room]{"entity": "room_type", "value":"conference"} at floor number [1]{"entity": "floor_num"} with [3]{"entity": "capacity"} participants
+   - I would like to book [meeting room]{"entity": "room_type", "value":"conference"} with [3]{"entity": "capacity"} people
+   - I would like to book [meeting space]{"entity": "room_type", "value":"conference"} at [2]{"entity": "floor_num"} floor
+   - I would like to book [office room for seniors]{"entity": "room_type", "value":"offices"} at floor number [3]{"entity": "floor_num"} with cubicle name [Cube2]{"entity": "name"}
+   - I would like to book [office room for seniors]{"entity": "room_type", "value":"offices"} from
+   - I would like to book [play pool]{"entity": "room_type", "value":"recreation"} with [2]{"entity": "capacity"} members
+   - I would like to book [play table tennis]{"entity": "room_type", "value":"recreation"} from
+   - I would like to book [pool room]{"entity": "room_type", "value":"recreation"} with [3]{"entity": "capacity"} participants
+   - I would like to book [quiet room]{"entity": "room_type", "value":"3"} with [1]{"entity": "capacity"} people
+   - Please book [an empty space]{"entity": "room_type", "value":"cubicles"}
+   - Please book [any confernece space]{"entity": "room_type", "value":"conference"} at floor number [3]{"entity": "floor_num"} with name of seat [Cube2]{"entity": "name"}
+   - Please book [any office room for director]{"entity": "room_type", "value":"offices"} from
+   - Please book [any office space for senior executives]{"entity": "room_type", "value":"offices"} at floor number [2]{"entity": "floor_num"}
+   - Please book [any silent room]{"entity": "room_type", "value":"3"} at floor [2]{"entity": "floor_num"} with seat name [Conference1]{"entity": "name"}
+   - Please book [any silent room]{"entity": "room_type", "value":"3"} at floor [3]{"entity": "floor_num"}
    - Please book [any silent room]{"entity": "room_type", "value":"3"} from
-   - Please book [any silent space]{"entity": "room_type", "value":"3"}
-   - Please book [available office room for director]{"entity": "room_type", "value":"offices"}
-   - Please book [available quiet room]{"entity": "room_type", "value":"3"} at floor number [1]{"entity": "floor_num"} with [3]{"entity": "capacity"} members
-   - Please book [available quiet room]{"entity": "room_type", "value":"3"} at floor number [1]{"entity": "floor_num"} with name of seat [Cube2]{"entity": "name"}
-   - Please book [available quiet room]{"entity": "room_type", "value":"3"} from
-   - Please book [available video confernece room]{"entity": "room_type", "value":"5"} at floor [2]{"entity": "floor_num"} with name of seat [Conference1]{"entity": "name"}
-   - Please book [available video confernece room]{"entity": "room_type", "value":"5"} at floor number [2]{"entity": "floor_num"}
-   - Please book [cubicle]{"entity": "room_type", "value":"cubicles"} at floor [3]{"entity": "floor_num"} with [3]{"entity": "capacity"} members
-   - Please book [empty space]{"entity": "room_type", "value":"cubicles"} at floor number [1]{"entity": "floor_num"} with [2]{"entity": "capacity"} people
-   - Please book [empty space]{"entity": "room_type", "value":"cubicles"} at floor number [3]{"entity": "floor_num"} with [2]{"entity": "capacity"} members
-   - Please book [office room for seniors]{"entity": "room_type", "value":"offices"}
-   - Please book [play table tennis]{"entity": "room_type", "value":"recreation"} at floor [3]{"entity": "floor_num"} with [1]{"entity": "capacity"} participants
-   - Please book [quiet space]{"entity": "room_type", "value":"3"} at floor [1]{"entity": "floor_num"} with [3]{"entity": "capacity"} people
-   - Please book [quiet space]{"entity": "room_type", "value":"3"} with [1]{"entity": "capacity"} people
-   - Please book [quiet space]{"entity": "room_type", "value":"3"} with [3]{"entity": "capacity"} participants
-   - book [any conf room]{"entity": "room_type", "value":"conference"} at [1]{"entity": "floor_num"} floor number
-   - book [any conf room]{"entity": "room_type", "value":"conference"} from
-   - book [any confernece space]{"entity": "room_type", "value":"conference"} from
-   - book [any office room for director]{"entity": "room_type", "value":"offices"} at storey [1]{"entity": "floor_num"} with [3]{"entity": "capacity"} people
-   - book [any office room for director]{"entity": "room_type", "value":"offices"} from
-   - book [any silent room]{"entity": "room_type", "value":"3"} at [3]{"entity": "floor_num"} storey
-   - book [any silent room]{"entity": "room_type", "value":"3"} at floor [3]{"entity": "floor_num"} with cubicle name [Cube1]{"entity": "name"}
-   - book [any video confernece space]{"entity": "room_type", "value":"5"} at [3]{"entity": "floor_num"} storey
-   - book [available individual seating space]{"entity": "room_type", "value":"cubicles"} from
-   - book [available office room for director]{"entity": "room_type", "value":"offices"} at floor [3]{"entity": "floor_num"} with [3]{"entity": "capacity"} members
-   - book [available office room for director]{"entity": "room_type", "value":"offices"} at floor number [3]{"entity": "floor_num"} with [2]{"entity": "capacity"} participants
-   - book [available quiet room]{"entity": "room_type", "value":"3"} with [3]{"entity": "capacity"} participants
-   - book [avaliable office room]{"entity": "room_type", "value":"offices"} at [3]{"entity": "floor_num"} floor number
-   - book [conf room]{"entity": "room_type", "value":"conference"} with [2]{"entity": "capacity"} members
-   - book [conference room]{"entity": "room_type", "value":"conference"} from
+   - Please book [any vacant space]{"entity": "room_type", "value":"cubicles"} at floor number [2]{"entity": "floor_num"} with [1]{"entity": "capacity"} members
+   - Please book [any vacant space]{"entity": "room_type", "value":"cubicles"} at floor number [3]{"entity": "floor_num"}
+   - Please book [any video confernece space]{"entity": "room_type", "value":"5"} at floor number [2]{"entity": "floor_num"} with [1]{"entity": "capacity"} participants
+   - Please book [available individual seating space]{"entity": "room_type", "value":"cubicles"} at storey [1]{"entity": "floor_num"} with cubicle name [Conference1]{"entity": "name"}
+   - Please book [available video confernece room]{"entity": "room_type", "value":"5"} at [2]{"entity": "floor_num"} floor number
+   - Please book [avaliable office room]{"entity": "room_type", "value":"offices"} at floor [2]{"entity": "floor_num"}
+   - Please book [conference room]{"entity": "room_type", "value":"conference"} at storey [2]{"entity": "floor_num"} with seat name [Conference2]{"entity": "name"}
+   - Please book [office room for seniors]{"entity": "room_type", "value":"offices"} at storey [2]{"entity": "floor_num"}
+   - Please book [play pool]{"entity": "room_type", "value":"recreation"} at storey [2]{"entity": "floor_num"} with [3]{"entity": "capacity"} participants
+   - Please book [play table tennis]{"entity": "room_type", "value":"recreation"} at [1]{"entity": "floor_num"} floor
+   - Please book [pool room]{"entity": "room_type", "value":"recreation"} at storey [3]{"entity": "floor_num"} with [3]{"entity": "capacity"} participants
+   - Please book [quiet space]{"entity": "room_type", "value":"3"} at storey [2]{"entity": "floor_num"} with seat name [Cube3]{"entity": "name"}
+   - Please book [table tennis]{"entity": "room_type", "value":"recreation"} at [3]{"entity": "floor_num"} storey
+   - Please book [table tennis]{"entity": "room_type", "value":"recreation"} at floor number [3]{"entity": "floor_num"} with [3]{"entity": "capacity"} members
+   - Please book [tt room]{"entity": "room_type", "value":"recreation"}
+   - Please book [video conference room]{"entity": "room_type", "value":"5"} at [2]{"entity": "floor_num"} floor
+   - book [an empty space]{"entity": "room_type", "value":"cubicles"}
+   - book [any conf room]{"entity": "room_type", "value":"conference"} with [3]{"entity": "capacity"} members
+   - book [any office room for director]{"entity": "room_type", "value":"offices"} at floor number [1]{"entity": "floor_num"} with cubicle name [Cube1]{"entity": "name"}
+   - book [any office space for senior executives]{"entity": "room_type", "value":"offices"} at floor [2]{"entity": "floor_num"} with cubicle name [Cube3]{"entity": "name"}
+   - book [any office space for senior executives]{"entity": "room_type", "value":"offices"} at storey [3]{"entity": "floor_num"} with [3]{"entity": "capacity"} members
+   - book [any silent space]{"entity": "room_type", "value":"3"} from
+   - book [any silent space]{"entity": "room_type", "value":"3"} with [2]{"entity": "capacity"} participants
+   - book [available confernece room]{"entity": "room_type", "value":"conference"} at storey [2]{"entity": "floor_num"} with seat name [Cube2]{"entity": "name"}
+   - book [available confernece room]{"entity": "room_type", "value":"conference"} from
+   - book [available quiet room]{"entity": "room_type", "value":"3"}
+   - book [available quiet room]{"entity": "room_type", "value":"3"} at floor number [3]{"entity": "floor_num"}
+   - book [available quiet room]{"entity": "room_type", "value":"3"} at floor number [3]{"entity": "floor_num"} with [2]{"entity": "capacity"} participants
+   - book [avaliable office room]{"entity": "room_type", "value":"offices"} at [3]{"entity": "floor_num"} floor
+   - book [avaliable office room]{"entity": "room_type", "value":"offices"} with [1]{"entity": "capacity"} members
+   - book [conf room]{"entity": "room_type", "value":"conference"} at storey [1]{"entity": "floor_num"}
    - book [cubicle]{"entity": "room_type", "value":"cubicles"}
-   - book [cubicle]{"entity": "room_type", "value":"cubicles"} at storey [2]{"entity": "floor_num"}
-   - book [empty space]{"entity": "room_type", "value":"cubicles"}
-   - book [meeting space]{"entity": "room_type", "value":"conference"}
-   - book [meeting space]{"entity": "room_type", "value":"conference"} at floor [3]{"entity": "floor_num"}
-   - book [office room for seniors]{"entity": "room_type", "value":"offices"} with [2]{"entity": "capacity"} people
-   - book [play pool]{"entity": "room_type", "value":"recreation"} at [2]{"entity": "floor_num"} floor number
-   - book [play table tennis]{"entity": "room_type", "value":"recreation"} at floor [1]{"entity": "floor_num"} with seat name [Conference2]{"entity": "name"}
-   - book [table tennis]{"entity": "room_type", "value":"recreation"} at [1]{"entity": "floor_num"} storey
-   - book [table tennis]{"entity": "room_type", "value":"recreation"} with [2]{"entity": "capacity"} members
-   - book [vacant room]{"entity": "room_type", "value":"cubicles"}
-   - book [vacant room]{"entity": "room_type", "value":"cubicles"} from
-   - book [vacant room]{"entity": "room_type", "value":"cubicles"} with [2]{"entity": "capacity"} participants
-   - book [video meeting space]{"entity": "room_type", "value":"5"}
+   - book [meeting room]{"entity": "room_type", "value":"conference"} with [1]{"entity": "capacity"} members
+   - book [play pool]{"entity": "room_type", "value":"recreation"} at storey [2]{"entity": "floor_num"}
+   - book [play table tennis]{"entity": "room_type", "value":"recreation"} at [1]{"entity": "floor_num"} floor number
+   - book [pool room]{"entity": "room_type", "value":"recreation"}
+   - book [quiet space]{"entity": "room_type", "value":"3"} at floor [3]{"entity": "floor_num"}
+   - book [quiet space]{"entity": "room_type", "value":"3"} with [2]{"entity": "capacity"} members
+   - book [table tennis]{"entity": "room_type", "value":"recreation"} with [3]{"entity": "capacity"} participants
+   - book [video conference room]{"entity": "room_type", "value":"5"} at floor number [2]{"entity": "floor_num"} with [1]{"entity": "capacity"} members
+   - book [video conference room]{"entity": "room_type", "value":"5"} with [3]{"entity": "capacity"} members
+   - book [video meeting space]{"entity": "room_type", "value":"5"} at floor [3]{"entity": "floor_num"}
+   - book [video meeting space]{"entity": "room_type", "value":"5"} at storey [2]{"entity": "floor_num"} with [1]{"entity": "capacity"} participants

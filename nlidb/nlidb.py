@@ -1,9 +1,9 @@
 import mysql.connector
 
 # Database Configs
-HOSTNAME = 'localhost'
+HOSTNAME = ' 0.0.0.0'
 USER = 'root'
-PWD = ''
+PWD = 'blingbling'
 DATABASE = 'bookings'
 
 
@@ -12,18 +12,20 @@ class SQlServer:
     Extracts data from column of a table
     """
 
-    def __init__(self, host, user, password, database):
+    def __init__(self, host, user, password, database, port):
         self.host = host
         self.user = user
         self.password = password
         self.database = database
+        self.port = port
 
     def intantiate_db(self):
         mydb = mysql.connector.connect(
             host=self.host,
             user=self.user,
             password=self.password,
-            database=self.database
+            database=self.database,
+            port=self.port
         )
         return mydb
 

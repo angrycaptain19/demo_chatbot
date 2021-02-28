@@ -1,7 +1,5 @@
-|entities_auto.chatette
 |entities_manual.chatette
 |aliases.chatette
-|common.chatette
 
 %[book-room]('training': '100', 'testing': '20')
     ~[Book] @[RoomType]
