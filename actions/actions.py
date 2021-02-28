@@ -12,7 +12,7 @@ from rasa_sdk.events import (
 
 HOSTNAME = '0.0.0.0'
 USER = 'root'
-PWD = 'blingbling'
+PWD = 'yourpassword'
 DATABASE = 'bookings'
 LIMIT = 10
 PORT='55009'

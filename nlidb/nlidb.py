@@ -3,7 +3,7 @@ import mysql.connector
 # Database Configs
 HOSTNAME = ' 0.0.0.0'
 USER = 'root'
-PWD = 'blingbling'
+PWD = 'yourpwd'
 DATABASE = 'bookings'
 
 
