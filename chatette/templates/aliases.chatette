@@ -1,0 +1,239 @@
+~[PositionEntityName]
+    \{"entity": "position_title", "group": "position"\}
+~[VacantRoomTypeEntityName]
+    \{"entity": "room_type", "value":"cubicles"\}
+~[ConferenceRoomTypeEntityName]
+    \{"entity": "room_type", "value":"conference"\}
+~[QuietRoomTypeEntityName]
+    \{"entity": "room_type", "value":"3"\}
+~[HighMgmtRoomTypeEntityName]
+    \{"entity": "room_type", "value":"offices"\}
+~[VideoConfRoomTypeEntityName]
+    \{"entity": "room_type", "value":"5"\}
+~[RecreationalRoomTypeEntityName]
+    \{"entity": "room_type", "value":"recreation"\}
+@[RoomType]
+    @[VacantRoom]~[VacantRoomTypeEntityName]
+    @[ConferenceRoom]~[ConferenceRoomTypeEntityName]
+    @[QuietRoom]~[QuietRoomTypeEntityName]
+    @[HighMgmtRoom]~[HighMgmtRoomTypeEntityName]
+    @[VideoConfRoom]~[VideoConfRoomTypeEntityName]
+    @[RecreationalRoomType]~[RecreationalRoomTypeEntityName]
+
+~[storey]
+    storey
+    floor
+    floor number
+~[seatName]
+    seat name
+    name of seat
+    cubicle name
+~[participants]
+    participants
+    members
+    people
+@[Floor]
+    @[number]~[FloorNum]
+@[member]
+    @[number]~[Mem]
+~[Mem]
+    \{"entity": "capacity"\}
+@[Seat]
+    @[cube_name]~[SeatEntity]
+~[SeatEntity]
+    \{"entity": "name"\}
+~[FloorNum]
+    \{"entity": "floor_num"\}
+
+~[Please]
+    please
+    plz
+    pls
+
+~[Thank]
+    thanks
+    thank you
+
+~[Hello]
+    Hello
+    Hey
+    Hola
+    Hiii
+
+~[Find]
+    find
+    i'm looking for
+    help me find
+    can i get
+    show me
+    get [me?]
+    let me know
+    search
+    fetch
+    check
+    furnish
+    show
+    retrieve
+    list
+    look
+    provide me
+
+~[Yes]
+    yep
+    yeah
+    Yes
+    yess
+    yass
+
+~[Detail]
+    details of
+    info about
+
+~[RelatedTo]
+    of the
+    related to
+
+~[Download]
+    Please download
+    Can u download
+    Download
+
+~[Email]
+    Please Email
+    Can u Email
+    Email
+
+~[What]
+    What's the
+    What is the
+    Can you show me
+    Can I get
+    Hey, what's the
+    Provide me the
+
+~[Status]
+    status of my
+    status of
+
+~[Count]
+    How many
+    Count
+    Calculate total number of
+    Hw many
+    Find the number of
+    Total number of
+
+~[Candidates1]
+    candidates applied for
+    candidates who have applied for
+
+~[Candidates2]
+    candidates applied from
+    candidates who have applied from
+
+~[Candidates3]
+    candidates lined up for
+    candidates who are lined up for
+
+~[Position]
+    position
+    pos
+    job position
+
+~[Degree]
+    degree
+    deg
+
+~[Insitute]
+    [institute|insitute]
+    college
+    university
+
+~[Skill]
+    skills
+    skill
+    skil
+    competency
+    competencies
+
+~[Enter]
+    Enter
+    I would like to enter
+    i want to [give my?]
+    Please enter
+    provide
+    Give
+    need to give
+    let me provide
+    put
+
+~[Feedback]
+    feedback
+    feedbacks
+    ffeedback
+    fback
+    fbck
+    feed back
+    fidback
+    feedbck
+    fidbck
+    f/b
+    feedbck
+    fedbck
+    comment
+    ffeeback
+    feedback link
+    feedback url
+    interview feedback
+    [assessment|assess|asses|asssess]
+    evaluate
+
+~[Url]
+    link
+    url
+
+~[Applicant]
+    [aplicant|applicant|applicnt]
+    [candidate|candidates|candate]
+    interviewee
+
+~[View]
+    View [my?]
+    Show [my?]
+    i want to [see|get|view]
+    I would like to view
+    get [me?] [all?]
+
+~[Time]
+    tomorrow
+    tomrorrow
+    yesterday
+    upcoming
+    today
+    the day after tomorrow
+    the day before yesterday
+    4 march 18
+    22 jan 2020
+    4-01-2021
+    4/01/20
+    01/02/2021
+
+~[Schedule]
+    [schedule|schedules|schdle|schdul|schedul]
+    [calendar|calender]
+    appointment
+    timetable
+    program
+    [engagement|engagements]
+    [interview|interviews|intros]
+
+
+~[GarbageWords]
+    submit
+    Submit
+
+~[Book]
+    book
+    Please book
+    I would like to book
+    I want to book

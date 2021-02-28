@@ -1,0 +1,104 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - book-room
+
+
+slots:
+  name:
+    type: text
+    influence_conversation: false
+  room_type:
+    type: text
+    influence_conversation: false
+  booking_type:
+    type: text
+    influence_conversation: false
+  floor_num:
+    type: text
+    influence_conversation: false
+  seat_num:
+    type: text
+    influence_conversation: false
+  time:
+    type: text
+    influence_conversation: false
+  id:
+    type: text
+    influence_conversation: false
+  filters:
+    type: list
+    influence_conversation: false
+  table:
+    type: text
+    influence_conversation: false
+  capacity:
+    type: float
+    influence_conversation: false
+
+entities:
+  - room_type
+  - booking_type
+  - floor_num
+  - seat_num
+  - time
+  - name
+  - capacity
+actions:
+  - action_book_room
+  - validate_booking_form
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+  utter_ask_time:
+  - text: "Provide the duration of booking"
+  utter_ask_capacity:
+    - text: "Provide the number of members for booking"
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+  utter_ask_floor_num:
+  - text: "Please provide the floor number are you looking for."
+  utter_ask_name:
+    - text: "Please provide the name of space if you remember."
+  utter_ask_room_type:
+    - text: "Please provide the space you are looking for. Is it Office/Cubicles/Recreational Space?"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+forms:
+  booking_form:
+    room_type:
+    - type: from_entity
+      entity: room_type
+    floor_num:
+    - type: from_entity
+      entity: floor_num
+    time:
+    - type: from_entity
+      entity: time
+    name:
+    - type: from_entity
+      entity: name
+

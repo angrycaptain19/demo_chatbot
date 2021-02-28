@@ -1,0 +1,62 @@
+
+@[VacantRoom]
+    \[cubicle\]
+    \[vacant room\]
+    \[empty space\]
+    \[any vacant space\]
+    \[any empty room\]
+    \[available empty room\]
+    \[available individual seating space\]
+
+@[ConferenceRoom]
+    \[conf room\]
+    \[meeting room\]
+    \[conference room\]
+    \[meeting space\]
+    \[any confernece space\]
+    \[any conf room\]
+    \[available confernece room\]
+
+@[QuietRoom]
+    \[quiet room\]
+    \[quiet space\]
+    \[any silent space\]
+    \[any silent room\]
+    \[available quiet room\]
+
+@[HighMgmtRoom]
+    \[avaliable office room\]
+    \[any office space for senior executives\]
+    \[any office room for director\]
+    \[office room for seniors\]
+    \[available office room for director\]
+
+
+@[VideoConfRoom]
+    \[video conference room\]
+    \[video meeting space\]
+    \[any video confernece space\]
+    \[any video conf room\]
+    \[available video confernece room\]
+
+@[RecreationalRoomType]
+    \[play pool\]
+    \[table tennis\]
+    \[tt room\]
+    \[pool room\]
+    \[play table tennis\]
+
+
+@[number]
+    \[1\]
+    \[2\]
+    \[3\]
+
+@[cube_name]
+    \[Cube1\]
+    \[Cube2\]
+    \[Cube3\]
+    \[Conference1\]
+    \[Conference1\]
+    \[Conference2\]
+
