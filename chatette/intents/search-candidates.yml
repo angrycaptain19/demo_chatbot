@@ -1,7 +1,0 @@
-version: "2.0"
-nlu:
-- intent: search-candidates
-  examples: |
-	  - Show me [candidates](applicant) with [btech]{"entity": "applicant", "group": "applicant_core__applicant_degree} degree
-	  - get me [btech]{"entity": "applicant", "group": "applicant_core__degree} degree [candidates](applicant)
-
