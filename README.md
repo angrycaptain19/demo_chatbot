@@ -74,8 +74,4 @@ Your input ->  I would like to book available individual seating space at floor 
 Hi Booking done for Cube1 Seating number- 1 Floor number- 1
 ```
 
-Case7: Pool table with participants
 
-```
-
-```
