@@ -1,0 +1,11 @@
+
+*/.idea/
+*/venv/
+*/logs/
+*.jpg
+*.pyc
+*.csv
+*.tsv
+*ipynb_checkpoints*
+*.DS_Store*
+*.egg-info

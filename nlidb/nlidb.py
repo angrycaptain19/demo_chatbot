@@ -1,14 +1,10 @@
-import os
-import re
 import mysql.connector
 
 # Database Configs
 HOSTNAME = 'localhost'
 USER = 'root'
 PWD = ''
-#DATABASE = 'talentpool'
-DATABASE = 'talentica'
-OUTPUT_PATH = "../data/lookup_tables"
+DATABASE = 'bookings'
 
 
 class SQlServer:
@@ -36,9 +32,6 @@ class SQlServer:
         mycursor = mydb.cursor()
         if flag:
             where_clause = get_where_clause(filters)
-
-            print("Th Where clause is", where_clause)
-
             mycursor.execute("SELECT * FROM {0} {1}".format(table, where_clause))
             myresult = mycursor.fetchall()
             return myresult
@@ -62,6 +55,7 @@ def get_where_clause_occupied(filters):
     default = default + str
     return default
 
+
 def get_where_clause_not_santized(filters):
     str = ''
     default = "WHERE status is NULL "
@@ -70,6 +64,7 @@ def get_where_clause_not_santized(filters):
             str = "AND {0}='{1}'".format(i, j)
     default = default + str
     return default
+
 
 def get_where_clause(filters):
     str=''
