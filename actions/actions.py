@@ -9,13 +9,7 @@ from rasa_sdk.events import (
     EventType,
     AllSlotsReset
 )
-
-HOSTNAME = '0.0.0.0'
-USER = 'root'
-PWD = 'yourpassword'
-DATABASE = 'bookings'
-LIMIT = 10
-PORT='55009'
+from actions.constants import HOSTNAME,USER,PWD,DATABASE,PORT
 
 # This config can be modified- This is for testing puprose
 dict_limt={
