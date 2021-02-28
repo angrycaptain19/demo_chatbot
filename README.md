@@ -1,4 +1,5 @@
 ## Setup Steps
+Create virtual env and pip install the requirements.
 
 1. `rasa shell --debug`
 2. `rasa run actions -vv`
