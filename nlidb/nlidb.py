@@ -14,14 +14,13 @@ class SQlServer:
         self.port = port
 
     def intantiate_db(self):
-        mydb = mysql.connector.connect(
+        return mysql.connector.connect(
             host=self.host,
             user=self.user,
             password=self.password,
             database=self.database,
             port=self.port
         )
-        return mydb
 
     def get_data(self, filters, table, flag=True):
         mydb = self.intantiate_db()
@@ -29,8 +28,7 @@ class SQlServer:
         if flag:
             where_clause = get_where_clause(filters)
             mycursor.execute("SELECT * FROM {0} {1}".format(table, where_clause))
-            myresult = mycursor.fetchall()
-            return myresult
+            return mycursor.fetchall()
 
         else:
             where_clause_occupied = get_where_clause_occupied(filters)
@@ -48,7 +46,7 @@ def get_where_clause_occupied(filters):
     if filters:
         for i, j in filters:
             str = "AND {0}='{1}'".format(i, j)
-    default = default + str
+    default += str
     return default
 
 
@@ -58,7 +56,7 @@ def get_where_clause_not_santized(filters):
     if filters:
         for i, j in filters:
             str = "AND {0}='{1}'".format(i, j)
-    default = default + str
+    default += str
     return default
 
 
@@ -68,6 +66,6 @@ def get_where_clause(filters):
     if filters:
         for i,j in filters:
             str = "AND {0}='{1}'".format(i,j)
-    default=default+str
+    default += str
     return default
 
